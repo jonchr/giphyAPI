@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<!-- Imports basic bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<title>Jon's Giphy Site</title>
+	
+	<!-- Calls jquery & ajax -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<style>
+		.col-md-3, .col-md-6 {
+			border: 1px solid black;
+		}
+		.container {
+			margin: 0px;
+			width: 100%;
+
+		}
+	</style>
+
+</head>
+<body>
+<!-- Navbar which will be populated with buttons using JS/jQuery -->
+<nav class="navbar navbar-default"></nav>
+
+<div class="container">
+
+	<!-- First row with four images -->
+	<div class="row">
+
+		<div class="col-md-3"><div id="image0">Hello</div></div>
+		<div class="col-md-3"><div id="image1">It's me</div></div>
+		<div class="col-md-3"><div id="image2">again</div></div>
+		<div class="col-md-3"><div id="image3">I was</div></div>
+
+	</div>
+	
+	<!-- Second row with two images and the menu box in the middle -->
+	<div class="row">
+
+		<div class="col-md-3"><div id="image4">wondering</div></div>
+		
+		<!-- Box in the middle of the page to add new buttons to the top -->
+		<div class="col-md-6">
+			<form id="new-button-form">
+		      <label for="text-input">Add Button</label>
+		      <!-- Text input box -->
+		      <input type="text" id="text-input">
+		      <br/>
+
+		      <!-- Button triggers new button to be added -->
+		      <input id="add-button" type="submit" value="Add a Button">
+		    </form>
+	    </div>
+		<div class="col-md-3"><div id="image5">all these</div></div>
+
+	</div>
+	
+	<!-- Third row with four images -->
+	<div class="row">
+
+		<div class="col-md-3"><div id="image6">years</div></div>
+		<div class="col-md-3"><div id="image7">you'd thought</div></div>
+		<div class="col-md-3"><div id="image8">of me</div></div>
+		<div class="col-md-3"><div id="image9">again</div></div>
+
+	</div>
+
+</div>
+
+<script type="text/javascript" src="./display.js"></script>
+
+</body>
+</html>
