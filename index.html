@@ -7,70 +7,108 @@
 	<!-- Imports basic bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
 	<title>Jon's Giphy Site</title>
 	
 	<!-- Calls jquery & ajax -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
-	<style>
+	<style>	
+		body {
+			/*background-color: #333;*/
+			background-image: url("./woven_@2X.png");
+			color: #eee;
+		}
+		p {
+			text-align: center;
+			padding: 3px;
+		}
+
+		button {
+			margin: 0px 5px;
+		}
+
+		.container {
+			min-height: 800px;
+			margin: 0px;
+			width: 100%;
+		}
+		.row {
+			max-height: 33%;
+			min-height: 100px;
+			min-width: 100%;
+			/*border: 1px solid #aaa;*/
+		}
 		.col-md-3, .col-md-6 {
-			border: 1px solid black;
+			/*border-left: 1px solid #aaa;
+			border-right: 1px solid #aaa;*/
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			min-height: 150px;
 		}
-		.container {
-			margin: 0px;
-			width: 100%;
+		.col-md-6 {
+			background-color: #252525;
+			border-radius: 10px;	
+			padding: 10px;
 
 		}
+		#new-button-form {
+			min-height: 100%;
+		}
+
+		
 	</style>
 
 </head>
 <body>
 <!-- Navbar which will be populated with buttons using JS/jQuery -->
-<nav class="navbar navbar-default"></nav>
+<nav class="navbar navbar-inverse"></nav>
 
 <div class="container">
 
 	<!-- First row with four images -->
 	<div class="row">
 
-		<div class="col-md-3"><div id="image0">Hello</div></div>
-		<div class="col-md-3"><div id="image1">It's me</div></div>
-		<div class="col-md-3"><div id="image2">again</div></div>
-		<div class="col-md-3"><div id="image3">I was</div></div>
+		<div class="col-md-3"><div id="image0"></div></div>
+		<div class="col-md-3"><div id="image1"></div></div>
+		<div class="col-md-3"><div id="image2"></div></div>
+		<div class="col-md-3"><div id="image3"></div></div>
 
 	</div>
 	
 	<!-- Second row with two images and the menu box in the middle -->
 	<div class="row">
 
-		<div class="col-md-3"><div id="image4">wondering</div></div>
+		<div class="col-md-3"><div id="image4"></div></div>
 		
 		<!-- Box in the middle of the page to add new buttons to the top -->
 		<div class="col-md-6">
 			<form id="new-button-form">
-		      <label for="text-input"></label>
-		      <!-- Text input box -->
-		      <input type="text" id="text-input">
-		      <br/>
+				<label for="text-input"></label>
+				<!-- Text input box -->
+				<input type="text" class="form-control" id="text-input">
+				<br/>
 
-		      <!-- Button triggers new button to be added -->
-		      <input id="add-button" type="submit" value="Add a Button">
+				<!-- Button triggers new button to be added -->
+				<input id="add-button" class="btn btn-info" type="submit" value="Add a Button">
+				<!-- Button removes a current button -->
+				<input id="remove-button" class="btn btn-danger" type="submit" value="Remove Button">
 		    </form>
 	    </div>
-		<div class="col-md-3"><div id="image5">all these</div></div>
-
+		<div class="col-md-3"><div id="image5"></div></div>
 	</div>
 	
 	<!-- Third row with four images -->
 	<div class="row">
 
-		<div class="col-md-3"><div id="image6">years</div></div>
-		<div class="col-md-3"><div id="image7">you'd thought</div></div>
-		<div class="col-md-3"><div id="image8">of me</div></div>
-		<div class="col-md-3"><div id="image9">again</div></div>
+		<div class="col-md-3"><div id="image6"></div></div>
+		<div class="col-md-3"><div id="image7"></div></div>
+		<div class="col-md-3"><div id="image8"></div></div>
+		<div class="col-md-3"><div id="image9"></div></div>
 
 	</div>
 
