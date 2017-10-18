@@ -4,8 +4,8 @@
 
 	//Array of search terms to create buttons for
 	//var topics = ["apple", "orange", "banana", "pineapple", "grapes", "blueberry", "blackberry", "jackfruit", "strawberry", "grapefruit"];
-	var topics = ["action", "adventure", "cartoon", "comedy", "documentary", "drama", "horror", "musical", "sci-fi", "thriller", "western"];
-	//var topics = ["beach", "cave", "cliff", "city", "desert", "forest", "mountain", "ocean", "plains", "river", "swamp", "volcano"];
+	// var topics = ["action", "adventure", "cartoon", "comedy", "documentary", "drama", "horror", "musical", "sci-fi", "thriller", "western"];
+	var topics = ["beach", "cave", "cliff", "city", "desert", "forest", "mountain", "ocean", "plains", "river", "swamp", "volcano"];
 
 	//Max number of pics to have on the page
 	var maxPics = 10;
