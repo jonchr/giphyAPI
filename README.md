@@ -31,6 +31,6 @@ The HTML and CSS code is contained within index.html, while the Javascript and j
 
 ## Screenshots
 ### Page without GIFs loaded
-![Main Page](assets/images/main_page.png)
+![Main Page](./images/main_page.png)
 ### When the Mountain button is clicked and GIFs are loaded
-![Mountain GIFS](assets/images/mountains_loaded.png)
+![Mountain GIFS](./images/mountains_loaded.png)
